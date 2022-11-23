@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        window.drf = {
+          csrfHeaderName: "{{ csrf_header_name|default:'X-CSRFToken' }}",
+          csrfToken: "{% if request %}{{ csrf_token }}{% endif %}"
+        };
+      </script>
+
+      <script>
+        fetch("http://127.0.0.1:8000/{{user.username}}",
+{
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    method: "GET",
+    
+})
+.then((res)=>res.json()).then(function(res){ console.log(res) })
+.catch(function(res){ console.log(res) })
+        console.log("{{user.last_name}}")
+        // fetch("http://127.0.0.1:8000/Artash?format=json").then(elem=>elem.json).then(a =>{
+        //   console.log(a)
+        // })
+      </script>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+<p class="demo">Fetch a file to change this text.asdfasdf</p>
+
+
+</body>
+</html>
