@@ -13,7 +13,7 @@ urlpatterns = [
     path('<str:username>', HomeView.as_view()),
     path('<str:username>/drive', DriveView.as_view()),
     path('<str:username>/drive/<int:id>', DriveUpdateView.as_view()),
-    # path('api/aa/<int:pk>', TodoAPIView.as_view(), name='api_aa'),
+    path('', views.LoginView.as_view(template_name='rest_framework/login.html'), name='login'),
     # path('api/dr', DriverPassenger.as_view()),
     # path('profile_list', ProfileList.as_view(template_name = 'rest_framework/profile_list.html',),name='profile_list'),
     # path('login/', MyObtainTokenPairView.as_view(), name='token_obtain_pair'),
