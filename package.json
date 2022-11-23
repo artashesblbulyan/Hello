@@ -1,0 +1,23 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+   "engines": {
+  "node": "18.12.0",
+  "npm": "8.19.2"
+},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artashesblbulyan/Hello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artashesblbulyan/Hello/issues"
+  },
+  "homepage": "https://github.com/artashesblbulyan/Hello#readme"
+}
